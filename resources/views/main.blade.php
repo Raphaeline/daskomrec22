@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Daskom Choose You</title>
+  <title>Explore the Jungle with Daskom</title>
   <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/assets/favicon/apple-touch-icon.png') }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/assets/favicon/favicon-32x32.png') }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/assets/favicon/favicon-16x16.png') }}">
@@ -36,14 +36,15 @@
             <!-- <span style="font-size: 20px">RECRUITMENT DASKOM LABORATORY</span> -->
           </li>
         </ul>
-        <div class="dlor-navright "><!--   id="dlor-toggler"-->
-        <ul class="navbar-nav dlor-navright position-fixed end-0 top-0 me-lg-4 mt-lg-4" id="dlor-toggler">
-          <li class="nav-item-login">
-            <a style="font-weight: 400;" class="nav-link text-center" href="/login" tabindex="-1" aria-disabled="true">LOGIN</a>
-          </li>
-        </ul>
-        <!-- </div> -->
-      </div>
+        <div class="dlor-navright ">
+          <!--   id="dlor-toggler"-->
+          <ul class="navbar-nav dlor-navright position-fixed end-0 top-0 me-lg-4 mt-lg-4" id="dlor-toggler">
+            <li class="nav-item-login">
+              <a style="font-weight: 400;" class="nav-link text-center" href="/login" tabindex="-1" aria-disabled="true">LOGIN</a>
+            </li>
+          </ul>
+          <!-- </div> -->
+        </div>
     </nav>
   </section>
 
