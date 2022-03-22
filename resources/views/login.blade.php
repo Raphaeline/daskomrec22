@@ -64,7 +64,7 @@
                 <div>
                   <input oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="10" autocomplete="off" class="form-style" type="text" id="nim" name="nim" alt="NIM" placeholder="Input NIM Kamu" required>
                 </div>
-                <div class="pt-2">
+                <div class="pt-3">
                   <input class="form-style" type="password" id="nim" name="password" alt="NIM" placeholder="Password" required>
                 </div>
                 @if (session('error'))
