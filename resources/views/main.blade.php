@@ -27,23 +27,18 @@
   <section id="nav-section">
     <nav class="navbar navbar-expand-lg dlor-navbar position-relative">
       <div class="container-fluid ">
-        <!-- <a class="navbar-brand " href=""><img src="{{asset('/assets/dlor.png')}}" alt="logo" class="dlor-logonav"></a> -->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
           <li class="mobile-hide leaf-img">
-            <!--nav-item-->
             <img width="75%" src="{{asset('/assets/daun.png')}}" alt="nav-leaf">
             <img class="monyet-img" width="17%" src="{{asset('/assets/monyet.png')}}" alt="nav-monk">
-            <!-- <span style="font-size: 20px">RECRUITMENT DASKOM LABORATORY</span> -->
           </li>
         </ul>
         <div class="dlor-navright ">
-          <!--   id="dlor-toggler"-->
           <ul class="navbar-nav dlor-navright position-fixed end-0 top-0 me-lg-4 mt-lg-4" id="dlor-toggler">
             <li class="nav-item-login">
               <a style="font-weight: 400;" class="nav-link text-center" href="/login" tabindex="-1" aria-disabled="true">LOGIN</a>
             </li>
           </ul>
-          <!-- </div> -->
         </div>
     </nav>
   </section>
@@ -61,7 +56,6 @@
               <div class="text-land-1">DASKOM</div>
               <div class="text-land-1">2022</div>
             </div>
-            <!-- <div class="c-text-land-2">
             <span class="text-land-2"></span>
           </div> -->
             <div class="c-text-land-2">
