@@ -85,7 +85,7 @@
         font-style: italic;
     }
     .text-land-1 {
-        font-size: 60px;
+        font-size: 12vw;
         transition: 2s;
         margin-bottom: -20px;
     }
@@ -101,11 +101,6 @@
     .tagline {
         font-size: 15px;
         font-style: italic;
-    }
-    .text-land-1 {
-        font-size: 12vw;
-        transition: 2s;
-        margin-bottom: -20px;
     }
     .pad-top-about {
         padding-top: 5vw;

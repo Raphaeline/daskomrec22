@@ -28,7 +28,7 @@
     <nav class="navbar navbar-expand-lg dlor-navbar position-relative">
       <div class="container-fluid ">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-          <li class="mobile-hide leaf-img">
+          <li class="leaf-img">
             <!--nav-item-->
             <img width="75%" src="{{asset('/assets/daun.png')}}" alt="nav-leaf">
             <img class="monyet-img" width="17%" src="{{asset('/assets/monyet.png')}}" alt="nav-monk">
