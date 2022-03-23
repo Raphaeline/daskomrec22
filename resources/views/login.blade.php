@@ -28,7 +28,6 @@
       <div class="container-fluid ">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
           <li class="leaf-img">
-            <!--nav-item-->
             <img width="75%" src="{{asset('/assets/daun.png')}}" alt="nav-leaf">
             <img class="monyet-img" width="17%" src="{{asset('/assets/monyet.png')}}" alt="nav-monk">
           </li>

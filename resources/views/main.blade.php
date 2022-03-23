@@ -57,7 +57,7 @@
               <div class="text-land-1">2022</div>
             </div>
             <span class="text-land-2"></span>
-          </div> -->
+          </div>
             <div class="c-text-land-2">
               <div class="text-land-2 tagline"> #ExploreTheJungle</div>
               <div class="text-land-2 tagline"> #FindYourPathNeverBeAfraid</div>
