@@ -29,6 +29,7 @@
       <div class="container-fluid ">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
           <li class="mobile-hide leaf-img">
+            <!--nav-item-->
             <img width="75%" src="{{asset('/assets/daun.png')}}" alt="nav-leaf">
             <img class="monyet-img" width="17%" src="{{asset('/assets/monyet.png')}}" alt="nav-monk">
           </li>
@@ -56,8 +57,6 @@
               <div class="text-land-1">DASKOM</div>
               <div class="text-land-1">2022</div>
             </div>
-            <span class="text-land-2"></span>
-          </div>
             <div class="c-text-land-2">
               <div class="text-land-2 tagline"> #ExploreTheJungle</div>
               <div class="text-land-2 tagline"> #FindYourPathNeverBeAfraid</div>
