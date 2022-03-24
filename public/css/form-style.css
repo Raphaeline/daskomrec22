@@ -161,11 +161,16 @@
 }
 
 .table-content-custom{
+<<<<<<< HEAD
     color:black;
     font-weight:700;
     background-color:#f1b442 !important;
+=======
+    color: black;
+    font-weight: 700;
+    background-color: #f1b442!important;
+>>>>>>> db3f1c5 (Update public/css/form-style.css)
 }
-
 .button-submit-find{
     border-radius: 15px;
     font-size: 17px;
