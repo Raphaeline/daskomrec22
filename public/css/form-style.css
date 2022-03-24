@@ -194,6 +194,9 @@
     margin-left: -1rem;
 }
 
+
+/* Media Query */
+
 @media only screen and (max-width:991px) {
     .modal-background {
         margin-top: 20vw;
