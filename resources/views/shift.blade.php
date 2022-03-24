@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Fira+Code:wght@400&display=swap" rel="stylesheet">   
 </head>
-<body id="list-section">
+<body style="background-color: #2c4d16" id="list-section">
 <!-- Modal Caas Input -->
 <!-- Button trigger modal -->
   <!-- Modal -->
@@ -81,7 +81,7 @@
         <form method="POST" action="\resetplot">
                 @csrf
             <div class="pb-2">
-              <span style="font-size: 15px;font-style:italic;font-weight:600;color:red">Apakah Anda yakin Reset Plottingan?</span> 
+              <span class="text-admin-warning">Apakah Anda yakin Reset Plottingan?</span> 
             </div>
         </div>
         <div class="modal-footer d-flex justify-content-center">
@@ -103,7 +103,7 @@
         <form method="POST" action="\delAllShift">
                 @csrf
             <div class="pb-2">
-              <span style="font-size: 15px;font-style:italic;font-weight:600;color:red">Apakah Anda yakin menghapus seluruh SHIFT?</span> 
+              <span class="text-admin-warning">Apakah Anda yakin menghapus seluruh SHIFT?</span> 
             </div>
         </div>
         <div class="modal-footer d-flex justify-content-center">
@@ -122,7 +122,7 @@
 <section id="list-section">
 <div class="container pb-5">
     <div class="pt-5 d-flex justify-content-center">
-        <div class="checker-box">
+        <div class="checker-box pt-5">
           <div class="text-center text-nim-head">
             <span>SHIFT Daskom Choose You</span>
           </div>
@@ -135,10 +135,10 @@
           @else
           @endif
           <div class="text-center pt-3 pb-3">
-            <span style="font-style: italic;color:red;font-weight:700;font-size:25px">Kepada Admin, Mohon teliti sebelum mengaktifkan pengisian jadwal, terima kasih</span>
+            <span class="text-admin-warning">Kepada Admin, Mohon teliti sebelum mengaktifkan pengisian jadwal, terima kasih</span>
           </div>
-          <div class="text-center pt-3 pb-3" style="background-color: #2cad27;border-radius: 1rem;padding: 0 20px 0 20px;">
-            <span style="color:rgb(213, 228, 213);font-weight:700;font-size:28px">Total Jadwal : {{$countshift}}</span>
+          <div class="text-center pt-3 pb-3" style="background-color: rgb(125, 238, 97);border-radius: 1rem;padding: 0 20px 0 20px;">
+            <span style="color:#000;font-weight:700;font-size:28px">Total Jadwal : {{$countshift}}</span>
           </div>
         </div>
       </div>
@@ -151,10 +151,10 @@
                     <button style="font-size:17px" type="button" class="button-submit-find" data-bs-toggle="modal" data-bs-target="#CaasInput">Shift Baru</button>
                   </div>
                   <div > 
-                    <button style="background-color:#fc3939;font-size:17px" type="button" class="button-submit-find" data-bs-toggle="modal" data-bs-target="#ResetPlot">Reset Plot</button>
+                    <button style="background-color:#bd3838;font-size:17px" type="button" class="button-submit-find" data-bs-toggle="modal" data-bs-target="#ResetPlot">Reset Plot</button>
                   </div>
                   <div >
-                    <button style="background-color:#6ec4af;font-size:17px" type="button" class="button-submit-find" data-bs-toggle="modal" data-bs-target="#delAllShift">Reset Shift</button>
+                    <button style="background-color:#8DD1C0;font-size:17px" type="button" class="button-submit-find" data-bs-toggle="modal" data-bs-target="#delAllShift">Reset Shift</button>
                   </div>
               @else
               @endif
@@ -169,24 +169,24 @@
             <table class="table table-bordered table-hover table-striped text-center align-middle">
                 <thead>
                     <tr>
-                        <th class="mobile-hide">No.</th>
-                        <th class="mobile-hide">SHIFT</th>
-                        <th>Tanggal</th>
-                        <th>Waktu</th>
-                        <th>Kuota</th>
-                        <th>OPSI</th>
+                        <th style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">No.</th>
+                        <th style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">SHIFT</th>
+                        <th style="color:black;font-weight:700;background-color:#f1b442">Tanggal</th>
+                        <th style="color:black;font-weight:700;background-color:#f1b442">Waktu</th>
+                        <th style="color:black;font-weight:700;background-color:#f1b442">Kuota</th>
+                        <th style="color:black;font-weight:700;background-color:#f1b442">OPSI</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php $no = 1; ?>
                     @foreach($shift as $p)
                     <tr>
-                        <td class="mobile-hide">{{ $no++ }}</td>
-                        <td class="mobile-hide">{{ $p->namashift }}</td>
-                        <td>{{ \Carbon\Carbon::parse($p->hari)->isoFormat('dddd, D MMMM Y') }}</td>
-                        <td>{{ $p->jam_start }} - {{ $p->jam_end }} WIB</td>
-                        <td>{{ $p->kuota }}</td>
-                        <td>
+                        <td style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">{{ $no++ }}</td>
+                        <td style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">{{ $p->namashift }}</td>
+                        <td style="color:black;font-weight:700;background-color:#f1b442">{{ \Carbon\Carbon::parse($p->hari)->isoFormat('dddd, D MMMM Y') }}</td>
+                        <td style="color:black;font-weight:700;background-color:#f1b442">{{ $p->jam_start }} - {{ $p->jam_end }} WIB</td>
+                        <td style="color:black;font-weight:700;background-color:#f1b442">{{ $p->kuota }}</td>
+                        <td style="color:black;font-weight:700;background-color:#f1b442">
                           @if($ceklulus->isPlotRun==0)
                             <a href="/EditShift/{{$p->id}}"><button style="font-size: 1rem" class="button-submit-find">Edit</button></a>
                             <a href="/delShiftconfirm/{{$p->id}}" ><button class="button-cancel">Hapus</button></a>
