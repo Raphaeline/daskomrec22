@@ -163,10 +163,7 @@
 .table-content-custom{
     color:black;
     font-weight:700;
-}
-
-#table-backgrounds{
-    background-color:#f1b442;
+    background-color:#f1b442 !important;
 }
 
 .button-submit-find{

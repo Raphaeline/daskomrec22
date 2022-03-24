@@ -69,23 +69,23 @@
                 <thead>
 
                     <tr>
-                        <th id="table-backgrounds" class="table-content-custom mobile-hide">No.</th>
-                        <th id="table-backgrounds" class="table-content-custom mobile-hide">SHIFT</th>
-                        <th id="table-backgrounds" class="table-content-custom">Tanggal</th>
-                        <th id="table-backgrounds" class="table-content-custom">Waktu</th>
-                        <th id="table-backgrounds" class="table-content-custom mobile-hide">Kuota</th>
-                        <th id="table-backgrounds" class="table-content-custom">LIST</th>
+                        <th class="table-content-custom mobile-hide">No.</th>
+                        <th class="table-content-custom mobile-hide">SHIFT</th>
+                        <th class="table-content-custom">Tanggal</th>
+                        <th class="table-content-custom">Waktu</th>
+                        <th class="table-content-custom mobile-hide">Kuota</th>
+                        <th class="table-content-custom">LIST</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php $no = 1; ?>
                     @foreach($shift as $p)
                     <tr>
-                        <td id="table-backgrounds" class="table-content-custom mobile-hide">{{ $no++ }}</td>
-                        <td id="table-backgrounds" class="table-content-custom mobile-hide">{{ $p->namashift }}</td>
-                        <td id="table-backgrounds" class="table-content-custom">{{ \Carbon\Carbon::parse($p->hari)->isoFormat('dddd, D MMMM Y') }}</td>
-                        <td id="table-backgrounds" class="table-content-custom">{{ $p->jam_start }} - {{ $p->jam_end }} WIB</td>
-                        <td id="table-backgrounds" class="table-content-custom mobile-hide">{{ $p->kuota }}</td>
+                        <td class="table-content-custom mobile-hide">{{ $no++ }}</td>
+                        <td class="table-content-custom mobile-hide">{{ $p->namashift }}</td>
+                        <td class="table-content-custom">{{ \Carbon\Carbon::parse($p->hari)->isoFormat('dddd, D MMMM Y') }}</td>
+                        <td class="table-content-custom">{{ $p->jam_start }} - {{ $p->jam_end }} WIB</td>
+                        <td class="table-content-custom mobile-hide">{{ $p->kuota }}</td>
                         
                         <td style="color:black;font-weight:700;background-color:grey;padding:1rem 0.4rem 1rem 0.4rem;">
                         @foreach($plot as $a)
