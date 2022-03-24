@@ -99,14 +99,14 @@
           </div>
           @else
           @endif
-          <div class="text-center p-2" style="background-color: #b2eeb0;border-radius: 1rem;">
-            <span style="color:rgb(49, 49, 49);font-weight:700;font-size:28px">Total CaAs : {{$countcaas}}</span>
+          <div class="text-center p-2 box-count-caas" style="margin-top:0px">
+            <span class="text-count-caas" style="color:rgb(49, 49, 49);">Total CaAs : {{$countcaas}}</span>
           </div>
-          <div class="text-center p-2" style="background-color: #2cad27;border-radius: 1rem;margin-top: 0.7rem">
-            <span style="color:rgb(30, 31, 30);font-weight:700;font-size:28px">Total Lolos : {{$countcaaslolos}}</span>
+          <div class="text-center p-2 box-count-caas" style="background-color: #2cad27;">
+            <span class="text-count-caas" style="color:rgb(30, 31, 30);">Total Lolos : {{$countcaaslolos}}</span>
           </div>
-          <div class="text-center p-2" style="background-color: #f53838;border-radius: 1rem;margin-top: 0.7rem">
-            <span style="color:rgb(230, 225, 225);font-weight:700;font-size:28px">Total Tidak Lolos : {{$countcaasnotlolos}}</span>
+          <div class="text-center p-2 box-count-caas" style="background-color: #f53838">
+            <span class="text-count-caas" style="color:rgb(230, 225, 225);">Total Tidak Lolos : {{$countcaasnotlolos}}</span>
           </div>
           @error('nim')
                 <div class="text-center pt-1">
@@ -151,10 +151,10 @@
                 <tbody>
                     @foreach($caas as $p)
                     <tr>
-                      <td style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">{{ $no++ }}</td>
-                        <td style="color:black;font-weight:700;background-color:#f1b442" class="uppercase mobile-hide">{{ $p->nama }}</td>
-                        <td style="color:black;font-weight:700;background-color:#f1b442">{{ $p->nim }}</td>
-                        <td style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">{{ $p->email }}</td>
+                      <td class="mobile-hide table-caas">{{ $no++ }}</td>
+                        <td class="uppercase mobile-hide table-caas">{{ $p->nama }}</td>
+                        <td class="table-caas">{{ $p->nim }}</td>
+                        <td class="mobile-hide table-caas">{{ $p->email }}</td>
                         @if($p->isLolos==1)
                         <td style="color:rgb(20, 182, 20);font-weight:700;background-color:#f1b442">Lolos</td>
                         @else
@@ -178,7 +178,7 @@
                         @else
                         @endif
                         </td>
-                        <td style="color:black;font-weight:700;background-color:#f1b442">
+                        <td class="table-caas">
                             <a href="/EditCaasAccount/{{ $p->datacaas_id }}"><button style="font-size: 1rem" class="button-submit-find">Edit</button></a>
                             <a href="/delcaasconfirm/{{ $p->datacaas_id }}" ><button class="button-cancel">Hapus</button></a>             
                         </td>

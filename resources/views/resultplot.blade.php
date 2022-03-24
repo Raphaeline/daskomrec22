@@ -23,12 +23,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Fira+Code:wght@400&display=swap" rel="stylesheet">   
 </head>
-<body id="list-section" style="background-color:#2c4d16">
+<body style="background-color:#2c4d16">
 
 @include('layouts/navbarAdminBack')
 @section('navbackadmin')
 @endsection
-<section id="list-section">
+<section id="landing-section">
 <div class="container pb-5">
     <div class="pt-5 d-flex justify-content-center">
         <div class="checker-box">

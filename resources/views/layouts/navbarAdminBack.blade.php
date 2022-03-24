@@ -10,10 +10,10 @@
         </ul>
         <div class="dlor-navright ">
           <ul class="navbar-nav dlor-navright position-fixed end-0 top-0 me-lg-4 mt-lg-4" id="dlor-toggler">
-            <li class="nav-item-login mx-3">
+            <li class="nav-item-login my-1 mx-3">
               <a style="font-weight: 400;" class="nav-link text-center" href="/adminHome" tabindex="-1" aria-disabled="true">HOME</a>
             </li>
-            <li class="nav-item-login mx-3">
+            <li class="nav-item-login my-1 mx-3">
               <a style="font-weight: 400;" class="nav-link text-center" href="/logoutAdmin" tabindex="-1" aria-disabled="true">LOGOUT</a>
             </li>
           </ul>

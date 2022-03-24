@@ -116,7 +116,7 @@
 @section('navbackadmin')
 @endsection
 
-<section>
+<section id="landing-section">
 <div class="container pb-5">
     <div class="pt-5 d-flex justify-content-center">
         <div class="checker-box pt-5">
@@ -134,8 +134,8 @@
           <div class="text-center pt-3 pb-3">
             <span class="text-admin-warning">Kepada Admin, Mohon teliti sebelum mengaktifkan pengisian jadwal, terima kasih</span>
           </div>
-          <div class="text-center pt-3 pb-3" style="background-color: rgb(125, 238, 97);border-radius: 1rem;padding: 0 20px 0 20px;">
-            <span style="color:#000;font-weight:700;font-size:28px">Total Jadwal : {{$countshift}}</span>
+          <div class="text-center pt-3 pb-3 box-jadwal">
+            <span class="text-jadwal">Total Jadwal : {{$countshift}}</span>
           </div>
         </div>
       </div>

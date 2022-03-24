@@ -13,7 +13,7 @@
 	font-weight: 650;
 }
 
- .menu-box-home-admin{
+.menu-box-home-admin{
     padding: 25px;
 } 
 .home-button{
@@ -54,12 +54,18 @@
 }
 
 @media only screen and (max-width:576px){
+    .mobile-hide{
+        display: none;
+    }
     .Welcome-text{
         font-size: 20px;
     }
     .Welcome-text-semibold {
         font-size: 20px;
         font-weight: 600;
+    }
+    .menu-box-home-admin{
+        padding:10px;
     }
     .tagline-home{
         font-style: italic;
