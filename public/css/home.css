@@ -1,5 +1,11 @@
+.Welcome-text-title{
+    margin-bottom: -10px;
+    font-size: 50px;
+    color: #f9d098;;
+}
 .Welcome-text{
     font-size: 30px;
+    color: #f9d098;;
 }
 
 .Welcome-text-semibold {
@@ -7,10 +13,29 @@
 	font-weight: 650;
 }
 
-.menu-box-home{
+ .menu-box-home-admin{
     padding: 25px;
-}
+} 
 .home-button{
+    background-color: #feb224;
+    padding-inline: 3vw;
+    padding-block: 1.7vw;
+    width: 20vw;
+    border-radius: 10px;
+    display: inline;
+    border-style: none;
+    transition: 0.5s;
+    font-size: 27px;
+}
+
+.home-button:hover{
+    background-color: #fceed4;
+    /* display: inline; */
+    border-style: none;
+    font-weight: 600;
+}
+
+.home-button-admin{
     background-color: #feb224;
     padding: 5px;
     width: 200px;
@@ -20,21 +45,11 @@
     transition: 0.5s;
     font-size: 20px;
 }
-.home-button:hover{
-    background-color: #fceed4;
-    padding: 0px;
-    width: 210px;
-    border-radius: 25px;
-    display: inline;
-    border-style: none;
-    transition: 0.5s;
-    font-size: 18px;
-    font-weight: 600;
-}
+
 .tagline-home{
     font-style: italic;
     font-size: 20px;
-    color:#197c8c;
+    color:#f9d098;
     font-weight: 600;
 }
 

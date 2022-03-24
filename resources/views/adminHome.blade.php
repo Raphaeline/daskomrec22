@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Fira+Code:wght@400&display=swap" rel="stylesheet">   
     
 </head>
-<body>
+<body style="background-color: #2c4d16">
   <!-- Modal -->
   <div class="modal fade" id="editpass" tabindex="-1" aria-labelledby="editpassLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -147,21 +147,10 @@
   </div>
 </div>
 
+@include('layouts/navbarAdminBack')
+@section('navbackadmin')
+@endsection
 
-<section id="nav-section">
-    <nav class="navbar navbar-expand-lg dlor-navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href=""><img src="{{asset('/assets/dlor.png')}}" alt="logo" class="dlor-logonav"></a>
-          <div class="dlor-navright" id="dlor-toggler">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a style="font-weight: 600;" class="nav-link text-center" href="/logoutAdmin" tabindex="-1" aria-disabled="true">LOGOUT</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-</section>
 <section id="main-nim">
     <div class="container p-3">
       <div class="d-flex justify-content-center">
@@ -226,12 +215,12 @@
         </div>
       </div>
       <div class="d-flex justify-content-center">
-      <div class="row pt-lg-5">
-          <div class="col-lg">
+      <div class="row pt-lg-5 pb-lg-5">
+          <div class="col">
             <div class="d-flex justify-content-center pt-3">
                 <a style="text-decoration: none" href="/CaasAccount">
-                <button style="background-color: #404040;color: whitesmoke;" class="home-button">
-                  <div class="menu-box-home">
+                <button style="background-color: #404040;color: #f9d098;" class="home-button-admin">
+                  <div class="menu-box-home-admin">
                   <div>
                     Akun CaAs
                   </div>
@@ -240,11 +229,11 @@
                 </a>
               </div>
           </div>
-          <div class="col-lg">
+          <div class="col">
             <div class="d-flex justify-content-center pt-3">
                 <a style="text-decoration: none" href="\ListShift">
-                <button style="background-color: #404040;color: whitesmoke;" class="home-button">
-                  <div class="menu-box-home">
+                <button style="background-color: #404040;color: #f9d098;" class="home-button-admin">
+                  <div class="menu-box-home-admin">
                   <div>
                     SHIFT
                   </div>
@@ -253,10 +242,10 @@
                 </a>
               </div>
           </div>
-          <div class="col-lg">
+          <div class="col">
             <div class="d-flex justify-content-center pt-3">
-                <button style="background-color: #404040;color: whitesmoke;" class="home-button" data-bs-toggle="modal" data-bs-target="#setdata">
-                  <div class="menu-box-home">
+                <button style="background-color: #404040;color: #f9d098;" class="home-button-admin" data-bs-toggle="modal" data-bs-target="#setdata">
+                  <div class="menu-box-home-admin">
                   <div>
                     SET CekLulus
                   </div>
@@ -264,10 +253,10 @@
                 </button>
               </div>
           </div>
-          <div class="col-lg">
+          <div class="col">
             <div class="d-flex justify-content-center pt-3">
-                <button style="background-color: #404040;color: whitesmoke;" class="home-button" data-bs-toggle="modal" data-bs-target="#setfirstmeet">
-                  <div class="menu-box-home">
+                <button style="background-color: #404040;color: #f9d098;" class="home-button-admin" data-bs-toggle="modal" data-bs-target="#setfirstmeet">
+                  <div class="menu-box-home-admin">
                   <div>
                     FIRSTMEET
                   </div>
@@ -275,10 +264,10 @@
                 </button>
               </div>
           </div>
-          <div class="col-lg">
+          <div class="col">
             <div class="d-flex justify-content-center pt-3">
-                <button style="background-color: #404040;color: whitesmoke;" class="home-button" data-bs-toggle="modal" data-bs-target="#editpass">
-                  <div class="menu-box-home">
+                <button style="background-color: #bd3838;color: whitesmoke;" class="home-button-admin" data-bs-toggle="modal" data-bs-target="#editpass">
+                  <div class="menu-box-home-admin">
                   <div>
                     Ubah Password
                   </div>
