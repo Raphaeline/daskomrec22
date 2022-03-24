@@ -11,7 +11,7 @@
         <div class="dlor-navright ">
           <ul class="navbar-nav dlor-navright position-fixed end-0 top-0 me-lg-4 mt-lg-4" id="dlor-toggler">
             <li class="nav-item-login">
-              <a style="font-weight: 400;" class="nav-link text-center" href="/logoutCaas" tabindex="-1" aria-disabled="true">LOGOUT</a>
+              <a style="font-weight: 400;" class="nav-link text-center" href="/logoutAdmin" tabindex="-1" aria-disabled="true">LOGOUT</a>
             </li>
           </ul>
         </div>
