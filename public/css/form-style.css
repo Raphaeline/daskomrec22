@@ -160,10 +160,21 @@
     transition: 0.5s;
 }
 
+.table-content-shift{
+    color:black;
+    font-weight:700;
+}
+
+#table-backgrounds{
+    background-color:#f1b442;
+}
+
 .button-submit-find{
     border-radius: 15px;
-    font-size: 20px;
+    font-size: 17px;
     font-weight:600;
+    margin-block: 5px ;
+    width: 150px;
     padding: 15px;
     border-style:none;
     text-align: center;

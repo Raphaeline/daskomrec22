@@ -23,9 +23,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Fira+Code:wght@400&display=swap" rel="stylesheet">   
 </head>
 <body id="EditBackColor">
-<!-- Modal Caas Input -->
-<!-- Button trigger modal -->
-  <!-- Modal -->
+@include('layouts/navbarAdminBack')
+@section('navbackadmin')
+@endsection
+
 <div class="modal-dialog modal-dialog-centered shadow">
       <div class="modal-background">
         <div class="p-4 text-center">

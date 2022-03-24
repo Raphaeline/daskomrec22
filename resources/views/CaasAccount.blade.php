@@ -22,10 +22,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Fira+Code:wght@400&display=swap" rel="stylesheet">   
 </head>
-<body id="list-section">
-<!-- Modal Caas Input -->
-<!-- Button trigger modal -->
+<body style="background-color: #2c4d16" id="list-section">
   <!-- Modal -->
+  
   <div class="modal fade" id="CaasInput" tabindex="-1" aria-labelledby="CaasInputLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-background">
@@ -139,29 +138,29 @@
             <table class="table table-bordered table-hover table-striped text-center align-middle">
                 <thead>
                     <tr>
-                        <th class="mobile-hide">No.</th>
-                        <th class="mobile-hide">Nama</th>
-                        <th>NIM</th>
-                        <th class="mobile-hide">Email</th>
-                        <th>Status</th>
-                        <th>Tahap</th>
-                        <th>OPSI</th>
+                        <th style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">No.</th>
+                        <th style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">Nama</th>
+                        <th style="color:black;font-weight:700;background-color:#f1b442">NIM</th>
+                        <th style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">Email</th>
+                        <th style="color:black;font-weight:700;background-color:#f1b442">Status</th>
+                        <th style="color:black;font-weight:700;background-color:#f1b442">Tahap</th>
+                        <th style="color:black;font-weight:700;background-color:#f1b442">OPSI</th>
                     </tr>
                 </thead>
                 <?php $no = 1; ?>
                 <tbody>
                     @foreach($caas as $p)
                     <tr>
-                      <td class="mobile-hide">{{ $no++ }}</td>
-                        <td class="uppercase mobile-hide">{{ $p->nama }}</td>
+                      <td style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">{{ $no++ }}</td>
+                        <td style="color:black;font-weight:700;background-color:#f1b442" class="uppercase mobile-hide">{{ $p->nama }}</td>
                         <td style="color:black;font-weight:700;background-color:#f1b442">{{ $p->nim }}</td>
-                        <td class="mobile-hide">{{ $p->email }}</td>
+                        <td style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">{{ $p->email }}</td>
                         @if($p->isLolos==1)
-                        <td style="color:rgb(20, 182, 20);font-weight:700">Lolos</td>
+                        <td style="color:rgb(20, 182, 20);font-weight:700;background-color:#f1b442">Lolos</td>
                         @else
-                        <td style="color:red;font-weight:700">Tidak Lolos</td>
+                        <td style="color:red;font-weight:700;background-color:#f1b442">Tidak Lolos</td>
                         @endif
-                        <td>
+                        <td style="color:black;font-weight:700;background-color:#f1b442">
                         @if($p->urut_tahap==1)
                         {{ $namatahap->find(1)->nama }}
                         @elseif($p->urut_tahap==2)
@@ -179,7 +178,7 @@
                         @else
                         @endif
                         </td>
-                        <td>
+                        <td style="color:black;font-weight:700;background-color:#f1b442">
                             <a href="/EditCaasAccount/{{ $p->datacaas_id }}"><button style="font-size: 1rem" class="button-submit-find">Edit</button></a>
                             <a href="/delcaasconfirm/{{ $p->datacaas_id }}" ><button class="button-cancel">Hapus</button></a>             
                         </td>

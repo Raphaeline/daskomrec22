@@ -76,11 +76,6 @@
                 <div class="Welcome-text-title">Selamat Datang</div>
                 <div class="Welcome-text-title">Calon Asisten Daskom</div>
                 <div class="Welcome-text-title">2022</div>
-                <!-- <span class="Welcome-text-title">
-                  <p>Selamat Datang</p>
-                  <p>Calon Asisten Daskom</p> 
-                  <p>2022</p> 
-                  </span> -->
               </div>
               <div class="pt-2">
                 <span class="tagline-home">
@@ -103,7 +98,7 @@
                   </a>
                 </div>
               </div>
-              @if($plotactive->isPlotActive==1)
+              @if($plotactive->isPlotActive===1)
               <div class="row-lg">
                 <div class="d-flex justify-content-center pt-3">
                   <a style="text-decoration: none" href="\finalPlot">
@@ -117,7 +112,7 @@
                   </a>
                 </div>
               </div>
-              @elseif($firstmeet->isPlotFirstmeet==1 && $plotactive->isPlotActive==NULL && $caas->urut_tahap==1)
+              @elseif($firstmeet->isPlotFirstmeet===1 && $plotactive->isPlotActive==NULL && $caas->urut_tahap===1)
               <div class="row-lg">
                 <div class="d-flex justify-content-center pt-3">
                   <a style="text-decoration: none" href="\listplot">
@@ -169,104 +164,6 @@
     </div>
     </div>
   </section>
-  <!-- <section id="main-nim">
-    <div class="container p-5">
-      <div class="d-flex justify-content-center">
-        <div style="background-color: #FFB936" class="checker-box">
-          <div class="text-center text-nim-head">
-            <span>Daskom Choose You 2021</span>
-          </div>
-          <div class="text-center pt-3 pb-3">
-            <div>
-              <span style="font-weight: 600" class="uppercase Welcome-text">
-              {{$caas->nama}}
-              </span>
-          </div>
-          <div>
-            <span style="font-weight: 700" class="Welcome-text">
-              NIM : {{$caas->nim}}
-            </span>
-          </div>
-          <div class="pt-4">
-            <span class="tagline-home">
-              #LoopingForever
-            </span>
-          </div>
-          <div class="pt-2">
-            <span class="tagline-home">
-              #StartYourJourneyTakeYourGoldey
-            </span>
-          </div>
-          @error('password')
-                <div class="text-center pt-1">
-                  <span class="text-center" style="color: red;font-weight:600;font-size:20px">ganti password gagal, password tidak boleh kosong dan minimal 8 karakter</span>
-                </div> 
-          @enderror
-          </div>
-        </div>
-      </div>
-
-      <div class="d-flex justify-content-center pt-3">
-        <div class="row">
-          <div class="col-lg">
-            <div class="d-flex justify-content-center pt-3">
-              <a style="text-decoration: none" href="\ceklulus">
-              <button style="background-color: #67C0E0" class="home-button">
-                <div class="menu-box-home">
-                <div>
-                  Cek Kelulusan
-                </div>
-                </div>
-              </button>
-              </a>
-            </div>
-          </div>
-          @if($plotactive->isPlotActive==1)
-          <div class="col-lg">
-            <div class="d-flex justify-content-center pt-3">
-              <a style="text-decoration: none" href="\finalPlot">
-              <button style="background-color: #4FF569" class="home-button">
-                <div class="menu-box-home">
-                <div>
-                  Jadwal Kamu
-                </div>
-                </div>
-              </button>
-              </a>
-            </div>
-          </div>
-          @elseif($firstmeet->isPlotFirstmeet==1 && $plotactive->isPlotActive==NULL && $caas->urut_tahap==1)
-          <div class="col-lg">
-            <div class="d-flex justify-content-center pt-3">
-              <a style="text-decoration: none" href="\listplot">
-              <button style="background-color: #4FF569" class="home-button">
-                <div class="menu-box-home">
-                <div>
-                  Pilih Jadwal
-                </div>
-                </div>
-              </button>
-              </a>
-            </div>
-          </div>
-          @else
-          @endif
-          <div class="col-lg">
-            <div class="d-flex justify-content-center pt-3">
-              <button style="background-color: #FF4E4E;color: whitesmoke;" class="home-button" data-bs-toggle="modal" data-bs-target="#editpass">
-                <div class="menu-box-home">
-                <div>
-                  Ganti Password
-                </div>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-</section> -->
 
   @include('layouts/about')
   @section('aboutdaskom')

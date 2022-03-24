@@ -22,10 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Fira+Code:wght@400&display=swap" rel="stylesheet">   
 </head>
-<body style="background-color: #2c4d16" id="list-section">
-<!-- Modal Caas Input -->
-<!-- Button trigger modal -->
-  <!-- Modal -->
+<body style="background-color: #2c4d16">
   <div class="modal fade" id="CaasInput" tabindex="-1" aria-labelledby="CaasInputLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-background">
@@ -119,7 +116,7 @@
 @section('navbackadmin')
 @endsection
 
-<section id="list-section">
+<section>
 <div class="container pb-5">
     <div class="pt-5 d-flex justify-content-center">
         <div class="checker-box pt-5">
@@ -148,20 +145,20 @@
               @if($ceklulus->isPlotRun==0)
                 <div class="d-flex text-center">
                   <div >
-                    <button style="font-size:17px" type="button" class="button-submit-find" data-bs-toggle="modal" data-bs-target="#CaasInput">Shift Baru</button>
+                    <button style="font-size:17px;color:whitesmoke;" type="button" class="button-submit-find mx-lg-2 mx-0" data-bs-toggle="modal" data-bs-target="#CaasInput">Shift Baru</button>
                   </div>
                   <div > 
-                    <button style="background-color:#bd3838;font-size:17px" type="button" class="button-submit-find" data-bs-toggle="modal" data-bs-target="#ResetPlot">Reset Plot</button>
+                    <button style="background-color:#bd3838;font-size:17px;color:whitesmoke;" type="button" class="button-submit-find mx-lg-2 mx-0" data-bs-toggle="modal" data-bs-target="#ResetPlot">Reset Plot</button>
                   </div>
                   <div >
-                    <button style="background-color:#8DD1C0;font-size:17px" type="button" class="button-submit-find" data-bs-toggle="modal" data-bs-target="#delAllShift">Reset Shift</button>
+                    <button style="background-color:#8DD1C0;font-size:17px;color:whitesmoke;" type="button" class="button-submit-find mx-lg-2 mx-0" data-bs-toggle="modal" data-bs-target="#delAllShift">Reset Shift</button>
                   </div>
               @else
               @endif
             </div>
             </div>
             <div class="text-center pb-4">
-              <a href="/ListShift"><button type="button" class="button-submit-find">
+              <a href="/ListShift"><button type="button" class="button-submit-find mx-lg-2 mx-0">
               Refresh 
               </button></a>
               </div>
@@ -169,24 +166,24 @@
             <table class="table table-bordered table-hover table-striped text-center align-middle">
                 <thead>
                     <tr>
-                        <th style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">No.</th>
-                        <th style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">SHIFT</th>
-                        <th style="color:black;font-weight:700;background-color:#f1b442">Tanggal</th>
-                        <th style="color:black;font-weight:700;background-color:#f1b442">Waktu</th>
-                        <th style="color:black;font-weight:700;background-color:#f1b442">Kuota</th>
-                        <th style="color:black;font-weight:700;background-color:#f1b442">OPSI</th>
+                        <th id="table-backgrounds" class="table-content-custom mobile-hide">No.</th>
+                        <th id="table-backgrounds" class="table-content-custom mobile-hide">SHIFT</th>
+                        <th id="table-backgrounds" class="table-content-custom ">Tanggal</th>
+                        <th id="table-backgrounds" class="table-content-custom ">Waktu</th>
+                        <th id="table-backgrounds" class="table-content-custom ">Kuota</th>
+                        <th id="table-backgrounds" class="table-content-custom ">OPSI</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php $no = 1; ?>
                     @foreach($shift as $p)
                     <tr>
-                        <td style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">{{ $no++ }}</td>
-                        <td style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">{{ $p->namashift }}</td>
-                        <td style="color:black;font-weight:700;background-color:#f1b442">{{ \Carbon\Carbon::parse($p->hari)->isoFormat('dddd, D MMMM Y') }}</td>
-                        <td style="color:black;font-weight:700;background-color:#f1b442">{{ $p->jam_start }} - {{ $p->jam_end }} WIB</td>
-                        <td style="color:black;font-weight:700;background-color:#f1b442">{{ $p->kuota }}</td>
-                        <td style="color:black;font-weight:700;background-color:#f1b442">
+                        <td id="table-backgrounds" class="table-content-custom mobile-hide">{{ $no++ }}</td>
+                        <td id="table-backgrounds" class="table-content-custom mobile-hide">{{ $p->namashift }}</td>
+                        <td id="table-backgrounds" class="table-content-custom ">{{ \Carbon\Carbon::parse($p->hari)->isoFormat('dddd, D MMMM Y') }}</td>
+                        <td id="table-backgrounds" class="table-content-custom ">{{ $p->jam_start }} - {{ $p->jam_end }} WIB</td>
+                        <td id="table-backgrounds" class="table-content-custom ">{{ $p->kuota }}</td>
+                        <td id="table-backgrounds" class="table-content-custom ">
                           @if($ceklulus->isPlotRun==0)
                             <a href="/EditShift/{{$p->id}}"><button style="font-size: 1rem" class="button-submit-find">Edit</button></a>
                             <a href="/delShiftconfirm/{{$p->id}}" ><button class="button-cancel">Hapus</button></a>

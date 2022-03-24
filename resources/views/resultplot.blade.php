@@ -69,23 +69,23 @@
                 <thead>
 
                     <tr>
-                        <th style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">No.</th>
-                        <th style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">SHIFT</th>
-                        <th style="color:black;font-weight:700;background-color:#f1b442">Tanggal</th>
-                        <th style="color:black;font-weight:700;background-color:#f1b442">Waktu</th>
-                        <th style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">Kuota</th>
-                        <th style="color:black;font-weight:700;background-color:#f1b442">LIST</th>
+                        <th id="table-backgrounds" class="table-content-custom mobile-hide">No.</th>
+                        <th id="table-backgrounds" class="table-content-custom mobile-hide">SHIFT</th>
+                        <th id="table-backgrounds" class="table-content-custom">Tanggal</th>
+                        <th id="table-backgrounds" class="table-content-custom">Waktu</th>
+                        <th id="table-backgrounds" class="table-content-custom mobile-hide">Kuota</th>
+                        <th id="table-backgrounds" class="table-content-custom">LIST</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php $no = 1; ?>
                     @foreach($shift as $p)
                     <tr>
-                        <td style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">{{ $no++ }}</td>
-                        <td style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">{{ $p->namashift }}</td>
-                        <td style="color:black;font-weight:700;background-color:#f1b442">{{ \Carbon\Carbon::parse($p->hari)->isoFormat('dddd, D MMMM Y') }}</td>
-                        <td style="color:black;font-weight:700;background-color:#f1b442">{{ $p->jam_start }} - {{ $p->jam_end }} WIB</td>
-                        <td style="color:black;font-weight:700;background-color:#f1b442" class="mobile-hide">{{ $p->kuota }}</td>
+                        <td id="table-backgrounds" class="table-content-custom mobile-hide">{{ $no++ }}</td>
+                        <td id="table-backgrounds" class="table-content-custom mobile-hide">{{ $p->namashift }}</td>
+                        <td id="table-backgrounds" class="table-content-custom">{{ \Carbon\Carbon::parse($p->hari)->isoFormat('dddd, D MMMM Y') }}</td>
+                        <td id="table-backgrounds" class="table-content-custom">{{ $p->jam_start }} - {{ $p->jam_end }} WIB</td>
+                        <td id="table-backgrounds" class="table-content-custom mobile-hide">{{ $p->kuota }}</td>
                         
                         <td style="color:black;font-weight:700;background-color:grey;padding:1rem 0.4rem 1rem 0.4rem;">
                         @foreach($plot as $a)
