@@ -67,7 +67,9 @@
     #landing-section {
         background-size: 190%;
         background-position:-55vw;
-        padding-bottom: 250px;
+
+        padding-top: 35vw;
+        padding-bottom: 10vw;
     }
     .mobile-hide {
         display: none;
@@ -98,7 +100,8 @@
 }
 @media only screen and (max-width: 576px) {
     #landing-section {
-        padding-bottom: 190px;
+        padding-top: 35vw;
+        padding-bottom: 10vw;
     }
     .form-style {
         border-radius: 10px;

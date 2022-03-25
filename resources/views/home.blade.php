@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/assets/favicon/apple-touch-icon.png') }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/assets/favicon/favicon-32x32.png') }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/assets/favicon/favicon-16x16.png') }}">
-  <link rel="stylesheet" type="text/css" href="{{ asset('/css/navbar-ex-admin.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('/css/navbar-ex.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('/css/footer.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('/css/login-caas.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('/css/about.css') }}">
@@ -25,7 +25,6 @@
 </head>
 
 <body style="background-color: #2c4d16">
-  <!--Password change section-->
   <div class="modal fade" id="editpass" tabindex="-1" aria-labelledby="editpassLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-background">
@@ -98,7 +97,7 @@
                   </a>
                 </div>
               </div>
-              @if($plotactive->isPlotActive===1)
+              @if($plotactive->isPlotActive==1)
               <div class="row-lg">
                 <div class="d-flex justify-content-center pt-3">
                   <a style="text-decoration: none" href="\finalPlot">
@@ -112,7 +111,7 @@
                   </a>
                 </div>
               </div>
-              @elseif($firstmeet->isPlotFirstmeet===1 && $plotactive->isPlotActive==NULL && $caas->urut_tahap===1)
+              @elseif($firstmeet->isPlotFirstmeet==1 && $plotactive->isPlotActive==NULL && $caas->urut_tahap==1)
               <div class="row-lg">
                 <div class="d-flex justify-content-center pt-3">
                   <a style="text-decoration: none" href="\listplot">
@@ -164,15 +163,3 @@
     </div>
     </div>
   </section>
-
-  @include('layouts/about')
-  @section('aboutdaskom')
-  @endsection
-
-  @include('layouts/footer')
-  @section('footer')
-  @endsection
-
-</body>
-
-</html>
