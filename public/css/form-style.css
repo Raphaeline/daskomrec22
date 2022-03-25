@@ -1,4 +1,4 @@
-.modal-background{
+.modal-background {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -6,7 +6,7 @@
     pointer-events: auto;
     background-color: #6e9850;
     background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
+    border: 1px solid rgba(0, 0, 0, .2);
     border-radius: .8rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -26,33 +26,43 @@
     color:#FF1212;
     font-weight:700;
     font-size:25px;
+
 }
 
-.rec-title{
+.text-admin-warning {
+    filter: drop-shadow(2px 2px 2px rgb(100, 100, 100));
+    font-style: italic;
+    color: #FF1212;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.rec-title {
     font-size: 2rem;
     font-weight: 600;
 }
 
-.text-area-set{
+.text-area-set {
     font-size: 1.2rem;
     font-weight: 600;
 }
 
 .text-area-fill {
-	display: block;
-	width: 100%;
-	padding: 0.3rem 0.85rem;
-	font-size: 1.3rem;
-	font-weight: 500;
-	line-height: 1.5;
-	color: #2b2b2b;
-	background-color: #ffecc6;
-	background-clip: padding-box;
-	border: none;
-	transition: 0.5s;
-	border-radius: 0.75rem;
-	resize: none;
+    display: block;
+    width: 100%;
+    padding: 0.3rem 0.85rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #2b2b2b;
+    background-color: #ffecc6;
+    background-clip: padding-box;
+    border: none;
+    transition: 0.5s;
+    border-radius: 0.75rem;
+    resize: none;
 }
+
 .text-area-fill:hover {
 	display: block;
 	width: 100%;
@@ -65,32 +75,33 @@
 	background-clip: padding-box;
 	border: none;
     transition: 0.5s;
-	border-radius: 0.75rem;
+    border-radius: 0.75rem;
     resize: none;
 }
 
 .form-check-input {
-	width: 1.5em;
-	height: 1.5em;
-	margin-top: .25em;
-	vertical-align: top;
-	background-color: #fff;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	border: 1px solid rgba(0,0,0,.25);
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	-webkit-print-color-adjust: exact;
-	color-adjust: exact;
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: .25em;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, .25);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
 }
 
-.selectform{
-	position: relative;
+.selectform {
+    position: relative;
 }
 
 .form-select-costum {
+
 	display: block;
 	width: 100%;
 	padding: .375rem 2.25rem .375rem .75rem;
@@ -110,12 +121,12 @@
 	appearance: none;
 }
 
-.button-submit{
+.button-submit {
     border-radius: 15px;
     font-size: 15px;
-    font-weight:600;
+    font-weight: 600;
     padding: 15px;
-    border-style:none;
+    border-style: none;
     text-align: center;
     color: aliceblue;
     background-color: #26b758;
@@ -123,40 +134,36 @@
 }
 .button-submit:hover{
     text-align: center;
-    background-color: #218921;
+    background-color: rgb(58, 207, 58);
     transition: 0.5s;
 }
 
-.button-cancel{
+.button-cancel {
     border-radius: 15px;
     font-size: 15px;
-    font-weight:600;
+    font-weight: 600;
     padding: 15px;
-	color: whitesmoke;
-    border-style:none;
+    color: whitesmoke;
+    border-style: none;
     text-align: center;
     background-color: #bd3838;
     transition: 0.5s;
 }
-.button-cancel:hover{
+
+.button-cancel:hover {
     color: aliceblue;
     text-align: center;
     background-color: #872828;
     transition: 0.5s;
 }
 
-.form-style-find{
+.form-style-find {
     border-radius: 15px;
     font-size: 20px;
-    font-weight:600;
+    font-weight: 600;
     padding: 15px;
     text-align: center;
     background-color: antiquewhite;
-    transition: 0.5s;
-}
-.form-style-find:hover{
-    text-align: center;
-    background-color: #FEB224;
     transition: 0.5s;
 }
 
@@ -166,6 +173,9 @@
     font-weight:600;
     padding: 15px;
     border-style:none;
+=======
+
+.form-style-find:hover {
     text-align: center;
     background-color: #FF4E4E;
     transition: 0.5s;
@@ -176,16 +186,26 @@
     background-color: #a13030;
     transition: 0.5s;
 }
-.button-submit-find{
+
+.table-content-custom {
+    color: black;
+    font-weight: 700;
+    background-color: #f1b442 !important;
+}
+
+.button-submit-find {
     border-radius: 15px;
-    font-size: 20px;
-    font-weight:600;
+    font-size: 17px;
+    font-weight: 600;
+    margin-block: 5px;
+    width: 150px;
     padding: 15px;
     border-style:none;
     text-align: center;
     background-color: rgb(125, 238, 97);
     transition: 0.5s;
 }
+
 .button-submit-find:hover{
     color: antiquewhite;
     text-align: center;
@@ -193,13 +213,22 @@
     transition: 0.5s;
 }
 
-.sbmt-btn-margin{
+.sbmt-btn-margin {
     margin-left: -1rem;
 }
 
-@media only screen and (max-width:991px){
-    .sbmt-btn-margin{
+
+/* Media Query */
+
+@media only screen and (max-width:991px) {
+    .modal-background {
+        margin-top: 20vw;
+    }
+    .sbmt-btn-margin {
         margin-left: 0;
         margin-top: 0.5rem;
+    }
+    .button-submit-find {
+        width: max-content;
     }
 }

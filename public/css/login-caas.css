@@ -67,8 +67,12 @@
     #landing-section {
         background-size: 190%;
         background-position:-55vw;
+
         padding-top: 35vw;
         padding-bottom: 10vw;
+    }
+    .mobile-hide {
+        display: none;
     }
     .checker-box {
         margin: 2vw;

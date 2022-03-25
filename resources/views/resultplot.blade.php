@@ -23,22 +23,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Fira+Code:wght@400&display=swap" rel="stylesheet">   
 </head>
-<body id="list-section">
-<section id="nav-section">
-    <nav class="navbar navbar-expand-lg dlor-navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href=""><img src="{{asset('/assets/dlor.png')}}" alt="logo" class="dlor-logonav"></a>
-          <div class="dlor-navright" id="dlor-toggler">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link text-center" href="/ListShift" tabindex="-1" aria-disabled="true"><img src="{{ asset('/assets/back-icon-admin.png') }}" alt="icon" width="40px" height="40px"></a>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-</section> 
-<section id="list-section">
+<body style="background-color:#2c4d16">
+
+@include('layouts/navbarAdminBack')
+@section('navbackadmin')
+@endsection
+<section id="landing-section">
 <div class="container pb-5">
     <div class="pt-5 d-flex justify-content-center">
         <div class="checker-box">
@@ -79,25 +69,25 @@
                 <thead>
 
                     <tr>
-                        <th class="mobile-hide">No.</th>
-                        <th class="mobile-hide">SHIFT</th>
-                        <th>Tanggal</th>
-                        <th>Waktu</th>
-                        <th  class="mobile-hide">Kuota</th>
-                        <th>LIST</th>
+                        <th class="table-content-custom mobile-hide">No.</th>
+                        <th class="table-content-custom mobile-hide">SHIFT</th>
+                        <th class="table-content-custom">Tanggal</th>
+                        <th class="table-content-custom">Waktu</th>
+                        <th class="table-content-custom mobile-hide">Kuota</th>
+                        <th class="table-content-custom">LIST</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php $no = 1; ?>
                     @foreach($shift as $p)
                     <tr>
-                        <td class="mobile-hide">{{ $no++ }}</td>
-                        <td class="mobile-hide">{{ $p->namashift }}</td>
-                        <td>{{ \Carbon\Carbon::parse($p->hari)->isoFormat('dddd, D MMMM Y') }}</td>
-                        <td>{{ $p->jam_start }} - {{ $p->jam_end }} WIB</td>
-                        <td  class="mobile-hide">{{ $p->kuota }}</td>
+                        <td class="table-content-custom mobile-hide">{{ $no++ }}</td>
+                        <td class="table-content-custom mobile-hide">{{ $p->namashift }}</td>
+                        <td class="table-content-custom">{{ \Carbon\Carbon::parse($p->hari)->isoFormat('dddd, D MMMM Y') }}</td>
+                        <td class="table-content-custom">{{ $p->jam_start }} - {{ $p->jam_end }} WIB</td>
+                        <td class="table-content-custom mobile-hide">{{ $p->kuota }}</td>
                         
-                        <td style="background-color: #464645;padding:1rem 0.4rem 1rem 0.4rem;">
+                        <td style="color:black;font-weight:700;background-color:grey;padding:1rem 0.4rem 1rem 0.4rem;">
                         @foreach($plot as $a)
                         @if($a->shifts_id==$p->id)
                         <div>

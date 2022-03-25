@@ -1,3 +1,4 @@
+
 .Welcome-text-title {
     margin-bottom: -10px;
     font-size: 50px;
@@ -6,6 +7,7 @@
 .Welcome-text {
     font-size: 30px;
     color: #f9d098;
+
 }
 
 .Welcome-text-semibold {
@@ -65,15 +67,23 @@
         width: 60vw;
     }
 }
-@media only screen and (max-width: 576px) {
-    .Welcome-text {
+
+@media only screen and (max-width:576px){
+    .mobile-hide{
+        display: none;
+    }
+    .Welcome-text{
         font-size: 20px;
     }
     .Welcome-text-semibold {
         font-size: 20px;
         font-weight: 600;
     }
-    .tagline-home {
+
+    .menu-box-home-admin{
+        padding:10px;
+    }
+    .tagline-home{
         font-style: italic;
         font-size: 15px;
         color: #197c8c;
