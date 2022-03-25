@@ -41,7 +41,7 @@
             <div class="text-center">
               <span class= "warning-loop" style="color: rgb(255, 43, 43)">!!!PERHATIAN!!!</span>
             </div>
-            <div style="background-color: #57773f;border-radius: 0.7rem;margin-top:0.6rem;">
+            <div style="background-color: #57773f;border-radius: 0.7rem;margin-top:1rem;">
               <span class="mention" style="color: rgb(228, 228, 228)">Setelah pilih jadwal, kalian tidak bisa ganti jadwal lagi</span>
             </div>
             <div style="background-color: #dc3545;border-radius: 0.7rem;margin-top:0.6rem;">
