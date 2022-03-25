@@ -80,7 +80,7 @@
           </div>
         </div>
       </div>
-      @if($isPlotActive==0 && $urut_tahap==$current_tahap && $isLolos==1 && $isPlotRun==1)
+      @if($isPlotActive===0 && $urut_tahap===$current_tahap && $isLolos===1 && $isPlotRun===1)
       <div class="d-flex justify-content-center pt-3">
         <a style="text-decoration: none" href="\listplot">
           <button class="home-button schedule-button">
