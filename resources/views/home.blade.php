@@ -25,7 +25,6 @@
 </head>
 
 <body style="background-color: #2c4d16">
-  <!--Password change section-->
   <div class="modal fade" id="editpass" tabindex="-1" aria-labelledby="editpassLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-background">
@@ -76,11 +75,6 @@
                 <div class="Welcome-text-title">Selamat Datang</div>
                 <div class="Welcome-text-title">Calon Asisten Daskom</div>
                 <div class="Welcome-text-title">2022</div>
-                <!-- <span class="Welcome-text-title">
-                  <p>Selamat Datang</p>
-                  <p>Calon Asisten Daskom</p> 
-                  <p>2022</p> 
-                  </span> -->
               </div>
               <div class="pt-2">
                 <span class="tagline-home">
