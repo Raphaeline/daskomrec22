@@ -51,7 +51,7 @@
             </div>
             @if($isLolos===1 && $urut_tahap===$current_tahap)
             <div class="pt-3">
-              <span style="font-size:25px;font-weight: 700;color:green;" class="Welcome-text">
+              <span style="font-size:2.5vw;font-weight: 700;color:whitesmoke;background-color:green;border-radius:17px; padding:10px 15px 10px 15px" class="Welcome-text">
                 {!!nl2br(e($lulustext))!!}
               </span>
             </div>
