@@ -51,7 +51,7 @@
             </div>
             @if($isLolos===1 && $urut_tahap===$current_tahap)
             <div class="pt-3">
-              <span style="font-size:25px;font-weight: 700;color:green;" class="Welcome-text">
+              <span style="font-size:2.5vw;font-weight: 700;color:whitesmoke;background-color:green;border-radius:17px; padding:10px 15px 10px 15px" class="Welcome-text">
                 {!!nl2br(e($lulustext))!!}
               </span>
             </div>
@@ -59,7 +59,7 @@
               @if($linktext!='-')
               <div class="d-flex justify-content-center pt-3">
                 <a style="text-decoration: none" href="{{$linktext}}" target="_blank">
-                  <button style="border-radius: 20px;" class="button-submit">
+                  <button style="border-radius: 20px;" class="button-submit-link">
                     <div>
                       <div>
                         CLICK THIS LINK
@@ -72,7 +72,7 @@
             </div>
             @else
             <div class="pt-3">
-              <span style="font-weight: 700;color:red;" class="Welcome-text">
+            <span style="font-size:2.5vw;font-weight: 700;color:whitesmoke;background-color:#FF1212;border-radius:17px; padding:10px 15px 10px 15px" class="Welcome-text">
                 {!!nl2br(e($failedtext))!!}
               </span>
             </div>

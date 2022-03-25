@@ -137,6 +137,22 @@
     background-color: rgb(58, 207, 58);
     transition: 0.5s;
 }
+.button-submit-link {
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px;
+    border-style: none;
+    text-align: center;
+    color: aliceblue;
+    background-color : #045520;
+    transition: 0.5s;
+}
+.button-submit-link:hover{
+    text-align: center;
+    background-color: #007228;
+    transition: 0.5s;
+}
 
 .button-cancel {
     border-radius: 15px;
