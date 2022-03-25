@@ -1,12 +1,12 @@
 #landing-section {
     background-image: url("/assets/bg-1.png");
-    background-position: bottom;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: 80%;
-    padding-top: 250px;
+    padding-top: 230px;
     position: relative;
     z-index: 1;
-    padding-bottom: 30px;
+    padding-bottom: -150px;
 }
 .mid-content {
     margin: auto;
@@ -67,7 +67,6 @@
     #landing-section {
         background-size: 190%;
         background-position:-55vw;
-        background-position:-54vw;
         padding-bottom: 250px;
     }
     .mobile-hide {
