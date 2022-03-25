@@ -49,7 +49,7 @@
                 NIM : {{$nim}}
               </span>
             </div>
-            @if($isLolos==1 && $urut_tahap==$current_tahap)
+            @if($isLolos===1 && $urut_tahap===$current_tahap)
             <div class="pt-3">
               <span style="font-size:25px;font-weight: 700;color:green;" class="Welcome-text">
                 {!!nl2br(e($lulustext))!!}
