@@ -34,7 +34,7 @@
     @if($Active===1 && $urut_tahap===$current_tahap)
     <div class="container">
       <div class="d-flex justify-content-center">
-        <div class="checker-box">
+        <div style="padding:100px" class="checker-box">
           <div class="text-center text-nim-head">
             <span>Apakah kamu lulus Tahap {{ $namatahap }}?</span>
           </div>
@@ -50,8 +50,8 @@
               </span>
             </div>
             @if($isLolos===1 && $urut_tahap===$current_tahap)
-            <div class="pt-3">
-              <span style="font-size:2.5vw;font-weight: 700;color:whitesmoke;background-color:green;border-radius:17px; padding:10px 15px 10px 15px" class="Welcome-text">
+            <div class="pt-3 announce-text announce-box">
+              <span>
                 {!!nl2br(e($lulustext))!!}
               </span>
             </div>
@@ -71,8 +71,8 @@
               @endif
             </div>
             @else
-            <div class="pt-3">
-            <span style="font-size:2.5vw;font-weight: 700;color:whitesmoke;background-color:#FF1212;border-radius:17px; padding:10px 15px 10px 15px" class="Welcome-text">
+            <div style="background-color:red" class="pt-3 announce-text announce-box">
+            <span>
                 {!!nl2br(e($failedtext))!!}
               </span>
             </div>
@@ -80,7 +80,7 @@
           </div>
         </div>
       </div>
-      @if($isPlotActive===0 && $urut_tahap===$current_tahap && $isLolos===1 && $isPlotRun===1)
+      @if($isPlotActive!==1 && $urut_tahap===$current_tahap && $isLolos===1 && $isPlotRun===1)
       <div class="d-flex justify-content-center pt-3">
         <a style="text-decoration: none" href="\listplot">
           <button class="home-button schedule-button">
