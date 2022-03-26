@@ -156,11 +156,12 @@
 
 .button-cancel {
     border-radius: 15px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 600;
+    margin-block: 5px;
+    width: 150px;
     padding: 15px;
-    color: whitesmoke;
-    border-style: none;
+    border-style:none;
     text-align: center;
     background-color: #bd3838;
     transition: 0.5s;
@@ -232,9 +233,6 @@
 .sbmt-btn-margin {
     margin-left: -1rem;
 }
-
-
-/* Media Query */
 
 @media only screen and (max-width:991px) {
     .modal-background {
