@@ -19,7 +19,7 @@
 
 .checker-box {
     background-color: #6e9850;
-    width: 43vw;
+    width: 100vmin;
     padding: 20px;
     border-radius: 20px;
     filter: drop-shadow(2px 1px 2px gray);
@@ -32,6 +32,17 @@
 .text-nim {
     font-size: 2.2vw;
     font-weight: 700;
+}
+
+.announce-text {
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: #faebd7;
+    border-radius: 17px;
+    padding: 10px 15px 10px 15px;
+}
+.announce-box{
+    background-color: #218921;
 }
 
 .form-style {
@@ -77,24 +88,38 @@
     background-color: rgb(58, 207, 58);
     transition: 0.5s;
 }
-.warning-loop{
+.warning-loop {
     background-color: black;
     padding: 10px;
     border-radius: 15px;
     animation: oppacity-run 0.5s infinite alternate;
 }
-@keyframes oppacity-run{
+
+.text-plot-firstmeet {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(226, 226, 226);
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+}
+.table-caas {
+    color: black;
+    font-weight: 700;
+    background-color: #f1b442 !important;
+}
+@keyframes oppacity-run {
     0% {
         opacity: 20%;
     }
-    100%{
+    100% {
         opacity: 100%;
     }
 }
 @media only screen and (max-width: 992px) {
     #landing-section {
         background-size: 190%;
-        background-position:-55vw;
+        background-position: -55vw;
         padding-top: 35vw;
         padding-bottom: 10vw;
     }
@@ -104,6 +129,9 @@
     .text-nim {
         font-size: 3vw;
         font-weight: 700;
+    }
+    .announce-text {
+        font-size: 30px;
     }
 }
 @media only screen and (max-width: 576px) {
