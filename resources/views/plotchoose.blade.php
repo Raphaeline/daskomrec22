@@ -54,7 +54,7 @@
         <div class="card-body">
           <div class="d-flex justify-content-center pb-4">
             <div class="ms-2">
-              <a href="/ceklulus"><button type="button" class="button-submit-cancel">
+              <a href="/ceklulus"><button type="button" class="button-cancel">
                   Kembali
                 </button></a>
             </div>
