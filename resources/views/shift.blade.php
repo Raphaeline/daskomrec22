@@ -121,7 +121,7 @@
     <div class="pt-5 d-flex justify-content-center">
         <div class="checker-box pt-5">
           <div class="text-center text-nim-head">
-            <span>SHIFT Daskom Choose You</span>
+            <span>SHIFT Daskom Laboratory Open Recruitment 2022</span>
           </div>
           @if($countshift!=0)
           <div class="text-center pt-4 pb-2">

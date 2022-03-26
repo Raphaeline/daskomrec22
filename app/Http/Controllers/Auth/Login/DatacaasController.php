@@ -87,7 +87,7 @@ class DatacaasController extends Controller
 			'nama'=>$request->nama,
 			'nim'=>$request->nim,
 			'email'=>$request->email,
-			'password'=>Hash::make($request->nim.='1804'),
+			'password'=>Hash::make($request->nim.='1016'),
 		]);
 
 		$tahap = Tahap::create([

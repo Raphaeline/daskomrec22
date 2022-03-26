@@ -33,7 +33,7 @@
     <div class="pt-5 d-flex justify-content-center">
         <div class="checker-box">
           <div class="text-center text-nim-head">
-            <span>Hasil Plot Rekrutmen Daskom Choose You</span>
+            <span>Hasil Plot Daskom Laboratory Open Recruitment</span>
           </div>
           <div class="text-center" style="background-color: #28d636;border-radius: 1rem;padding: 1rem 2rem 1rem 2rem;margin-top:1rem;">
             <span style="color:rgb(255, 255, 255);font-weight:700;font-size:28px">Total Jadwal : {{$countshift}}</span>

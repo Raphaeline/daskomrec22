@@ -156,7 +156,7 @@
       <div class="d-flex justify-content-center">
         <div class="checker-box">
           <div class="text-center text-nim-head">
-            <span>Admin of Daskom Choose You 2021</span>
+            <span>Admin of DLOR 2022</span>
           </div>
           <div class="text-center pt-1 pb-3">
             <div class="pb-4">

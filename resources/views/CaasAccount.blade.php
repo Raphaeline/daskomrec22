@@ -41,7 +41,7 @@
                 <input autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="text-center text-area-fill" type="text" name="nim" placeholder="NIM" maxlength="10" required>
             </div>
             <div class="pt-2 pb-2">
-                <input autocomplete="off" class="text-center text-area-fill" type="email" name="email" placeholder="Email" required>
+                <input autocomplete="off" class="text-center text-area-fill" type="text" name="email" placeholder="idline" required>
             </div>
             <div>
                 <label for="isLolos">
@@ -77,7 +77,7 @@
     <div class="pt-5 d-flex justify-content-center">
         <div class="checker-box">
           <div class="text-center text-nim-head">
-            <span>Data Calon Asisten Daskom Choose You 2021</span>
+            <span>Data Calon Asisten DLOR 2022</span>
           </div>
           @if($countcaas!=0)
           <div class="text-center pt-3 pb-3">
