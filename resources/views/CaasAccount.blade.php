@@ -41,7 +41,7 @@
                 <input autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="text-center text-area-fill" type="text" name="nim" placeholder="NIM" maxlength="10" required>
             </div>
             <div class="pt-2 pb-2">
-                <input autocomplete="off" class="text-center text-area-fill" type="email" name="email" placeholder="Email" required>
+                <input autocomplete="off" class="text-center text-area-fill" type="email" name="email" placeholder="ID LINE" required>
             </div>
             <div>
                 <label for="isLolos">
