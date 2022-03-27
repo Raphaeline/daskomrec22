@@ -45,8 +45,8 @@
                 <input class="text-center text-area-fill" type="text" name="nim" placeholder="NIM" value="{{ $caas->nim }}" disabled>
             </div>
             <div class="pb-2">
-                <label style="display: block" class="text-area-set">Email :
-                <input class="text-center text-area-fill" type="email" name="email" placeholder="Email" value="{{ $caas->email }}" disabled>
+                <label style="display: block" class="text-area-set">ID LINE :
+                <input class="text-center text-area-fill" type="email" name="email" placeholder="ID LINE" value="{{ $caas->email }}" disabled>
             </div>
             <label class="pb-2 text-area-set">Shift:</label>
                 <input class="text-center text-area-fill" type="text" value="{{$shift->namashift}}" disabled>
