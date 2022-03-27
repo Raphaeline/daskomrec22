@@ -35,11 +35,11 @@
       <div class="pt-5 pb-3 d-flex justify-content-center">
         <div style="background-color: #FFC844" class="checker-box">
           <div class="text-center text-nim-head">
-            <span>YOUR RECRUITMENT SCHEDULE</span>
+            <span>JADWAL RECRUITMENT</span>
           </div>
           <div class="text-center pt-3 pb-3">
             <div class="pb-2 text-nim">
-              <span >You've chosen a recruitment schedule and your schedule can't be changed anymore, thank you</span>
+              <span >Kamu telah memilih jadwal praktikum, dan jadwal tersebut tidak dapat diubah kembali. Terima kasih!</span>
             </div>
             @if($caas->isLolos==0)
             <div class="pt-3 pb-3" style="background-color: #cc4147;border-radius: 1rem;padding: 0 20px 0 20px;">
@@ -52,12 +52,12 @@
             </div>
             @if($caas->isLolos==1 && $firstmeet->isPlotFirstmeet==0)
             <div class="pt-2">
-              <span class="Welcome-text-semibold">Date : {{\Carbon\Carbon::parse($plots->hari)->isoFormat('dddd, D MMMM Y')}}</span>
+              <span class="Welcome-text-semibold">Tanggal : {{\Carbon\Carbon::parse($plots->hari)->isoFormat('dddd, D MMMM Y')}}</span>
             </div>
             @else
             @endif
             <div class="pt-3">
-              <span class="Welcome-text-semibold">Time : {{$plots->jam_start}} - {{$plots->jam_end}} WIB</span>
+              <span class="Welcome-text-semibold">Waktu : {{$plots->jam_start}} - {{$plots->jam_end}} WIB</span>
             </div>
             <div class="pt-4 text-center text-nim-head">
               <span style="color: rgb(5, 158, 5)">Semangat dan pantau terus informasi di OA Line Recruitment Daskom Laboratory untuk instruksi berikutnya.</span>
